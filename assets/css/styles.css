@@ -1,5 +1,17 @@
 /* styles.css */
-
-* {
-	font-family: Arial;
-}
+*{box-sizing:border-box}
+:root{--bg:#fff;--fg:#000;--font:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+html,body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font)}
+body{min-height:100vh}
+.page{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;padding:3rem 1.25rem;text-align:center}
+h1{font-size:clamp(1.5rem,4.2vw,3rem);font-weight:400;margin:0;line-height:1.2;max-width:22ch}
+.text{font-size:clamp(1rem,2vw,1.5rem);margin:0;max-width:44ch;line-height:1.5}
+.deco{font-size:clamp(1.5rem,3vw,2.5rem);margin:0;letter-spacing:.1em}
+.row{display:flex;align-items:center;gap:1rem}
+pre.art{margin:0;text-align:left;line-height:1.15;max-width:100%;overflow:visible;white-space:pre;font-family:var(--font)}
+.choices,.animals{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem 3rem}
+.animals{gap:2rem 4rem;align-items:flex-end}
+.animal{display:flex;flex-direction:column;align-items:center;gap:1rem;color:inherit;text-decoration:none}
+.lnk{font-size:clamp(1rem,2vw,1.5rem);color:var(--fg);text-decoration:underline;text-underline-offset:.25em}
+a.lnk:hover,.animal:hover .lnk{background:var(--fg);color:var(--bg)}
+a:focus-visible{outline:3px solid var(--fg);outline-offset:4px}
