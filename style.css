@@ -1,0 +1,32 @@
+/* simple styles for every page */
+body {
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 40px 20px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+p {
+  font-size: 22px;
+}
+pre {
+  display: inline-block;
+  text-align: left;
+}
+a {
+  color: black;
+  font-size: 22px;
+  margin: 0 25px;
+}
+a:hover {
+  background-color: black;
+  color: white;
+}
+.animal {
+  display: inline-block;
+  margin: 20px 40px;
+}
